@@ -1,0 +1,27 @@
+@import "setup";
+@import "variables";
+@import "header";
+@import "navigation";
+@import "home";
+@import "button";
+@import "footer";
+@import "mixins";
+@import "mediaQueries";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $primaryFont;
+}
+
+.wrapper {
+  max-width: 1020px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}

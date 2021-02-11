@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:ital,wght@0,100;0,300;1,400&display=swap');
+// font-family: 'Kumar One', cursive;
+// font-family: 'Kumar One Outline', cursive;
+// font-family: 'Lato', sans-serif;
+
+
+$primaryColor: #f5f5f5;
+$backgroundColor: #e0fddf;
+$btnColor: #065635;
+$baseColor: #151514;
+$borderColor: #f8fb05;
+
+$primaryFont: 'Lato', sans-serif;
+$firstBaseFont: 'Kumar One Outline', cursive;
+$secondBaseFont: 'Kumar One', cursive;
+
+// Media queries
+// /* Mobile Styles */
+// /* Fluid width */
+$mobileScreen: 400px;
+
+// /* Tablet Styles */
+// /* Fluid width */
+$tabletScreenMin: 651px;
+$tabletScreenMax: 960px; 
+
+// /* Desktop Styles */
+$desktopScreenMin: 961px;
+
+// Custom Styles
+$screen: 0;

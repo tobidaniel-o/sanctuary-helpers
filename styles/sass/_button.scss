@@ -1,0 +1,10 @@
+.button {
+  display: block;
+  text-transform: uppercase;
+  font-family: $secondBaseFont;
+  background-color: $btnColor;
+  color: $primaryColor;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}

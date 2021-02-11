@@ -1,0 +1,195 @@
+.homeMainPage {
+
+  .section1 {
+    display: none;
+    position: relative;
+    .section1Img {
+      position: relative;
+      top: -12rem;
+      left: -5rem;
+      width: 70%;
+      height: 15vh;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  h2 {
+    font-family: $secondBaseFont;
+  }
+}
+
+.homeSection2 {
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+  .section2ContentContainer {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 5%;
+    .content {
+      text-align: left;
+
+      h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        margin-bottom: 1rem;
+      }
+    }
+    .button {
+      font-size: 1rem;
+      padding: 0.5rem 0.5rem;
+      letter-spacing: 0.1rem;
+    }
+    .section2Img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.homeSection3 {
+  background-color: $backgroundColor;
+  padding: 2.5rem 0;
+  .homeSection3ImgContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}
+
+.homeSection4 {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  .homeSection4Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    li {
+      display: flex;
+      margin: 0 1rem 1rem;
+
+      .icons {
+        margin-right: 1rem;
+        height: 21%;
+        padding: 0.5rem 0.5rem;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        i {
+          width: 100%;
+        }
+      }
+      h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        letter-spacing: 0.1rem;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.homeSection5 {
+  padding-top: 4rem;
+  background: $backgroundColor;
+
+  .homeSection5Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem 3.5rem;
+    padding-bottom: 2rem;
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 0.7rem;
+      font-size: 1.3rem;
+    }
+
+    .button {
+      display: inline;
+      letter-spacing: 0.1rem;
+      padding: 0.2rem 0.4rem;
+      font-size: 0.8rem;
+    }
+    .homeSection5ImgOne,
+    .homeSection5ImgTwo {
+      width: 100%;
+    }
+
+    .homeSection5ImgOne {
+      // position: relative;
+      // top: -4rem;
+      // left: -4rem;
+      box-shadow: 9px 9px $borderColor;
+    }
+
+    .homeSection5ImgTwo {
+      // position: relative;
+      // right: -2rem;
+      // bottom: -3rem;
+      box-shadow: -9px 9px $borderColor;
+    }
+    .newLocations {
+      text-align: right;
+      padding-bottom: 2rem;
+    }
+
+    p {
+      line-height: 1.3rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.homeSection6 {
+  img {
+    width: 100%;
+  }
+}
+
+.homeSection7 {
+  text-align: center;
+  padding: 4rem 5rem;
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .button {
+    display: inline;
+    padding: 0.4rem 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+  }
+}

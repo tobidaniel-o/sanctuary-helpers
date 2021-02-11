@@ -1,0 +1,89 @@
+// Media queries
+/* Mobile Styles */
+/* Fluid width */
+// @media only screen and (max-width: 400px) {
+// }
+
+/* Tablet Styles */
+/* Fluid width */
+
+// @media only screen and (min-width: 765px) and (max-width: 960px) {
+//       @content;
+// }
+
+@mixin tabletMinMax {
+  @media only screen and (min-width: #{$tabletScreenMin}) and (max-width: #{$tabletScreenMax}) {
+        @content;
+  }
+}
+
+/* Desktop Styles */
+/* And that’s where our desktop layout comes in. We don’t want our web page to expand endlessly, so we’re going to give it a fixed width and center it with auto-margins. */
+@mixin desktop {
+  @media only screen and (min-width:#{$desktopScreenMin}) {
+    @content;
+  }
+}
+
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (min-width: $screen+'px') {
+    @content;
+  }
+}
+
+
+// Example of mixins are below
+/*in this mixin declaration, $sizeValue is the placeholder*/
+// @mixin fontSize($sizeValue) {
+//   font-size: $sizeValue;
+//   color: blue;
+//   font-weight: bold;
+// }
+// When the mixin is used, we pass in the value we need, and that value replaces the placeholder variable.
+// h1 {
+  /* when we use the mixin, we replace the placeholder with the actual value we want */
+  // @include fontSize(36px);
+// }
+
+// p {
+//   @include fontSize(14px);
+// }
+
+// We can even get Sass to do math for us! Say we want it to dymanimcally generate our font sizes in rems with a pixel fallback. So far, we have been setting the base font size in our HTML to 125% to allow for easy rem calculation. Here's how we might make it even easier with a mixin:
+
+// @mixin fontSize($sizeValue) {
+//   font-size: $sizeValue * 1px;
+//   font-size: ($sizeValue/10) * 1rem;
+// }
+
+// h1 {
+//   @include fontSize(48);
+// }
+
+// Mixins can also accept multiple variables, opening up a whole world of possibilities:
+// @mixin position($type, $top, $left) { 
+//   position: $type; 
+//   top: $top;
+//   left: $left; 
+// }
+
+// .box { 
+//   @include position(absolute, 15px, 30px); 
+// }
+
+// When we declare mixins with variables, every variable must have a value passed in when the mixin is being included. However we can make a value optional if we provide a default value to the variable when we define the mixin:
+
+// @mixin position($type: relative, $top: 0, $left: 0 ) {
+//   position: $type; 
+//   top: $top;
+//   left: $left; 
+// }
+// .box {
+//   @include position(absolute); 
+// }
+// So even if we didn't provide values for $top and $left variable, SCSS will compile to use the default values provided.
+
+
+

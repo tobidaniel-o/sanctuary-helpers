@@ -1,0 +1,140 @@
+// Home
+.homePageHeader {
+  .logoNav {
+    ul {
+      @include tabletMinMax {
+        display: flex;
+      }
+      @include desktop {
+        display: flex;
+      }
+    }
+    i {
+      @include tabletMinMax {
+        display: none;
+      }
+
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+
+  h1 {
+    @include desktop {
+      font-size: 4.5rem;
+      font-weight: normal;
+      top: 1rem;
+      left: 9rem;
+    }
+  }
+}
+
+.homeMainPage {
+  position: relative;
+  .section1 {
+    @include tabletMinMax {
+      display: block;
+
+    .section1Img {
+      @include tabletMinMax {
+        position: absolute;
+        top: -13rem;
+
+        img {
+          @include tabletMinMax {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section1 {
+  @include desktop {
+    display: block;
+  }
+
+  .section1Img {
+    @include desktop {
+      top: -19rem;
+      left: 0rem;
+      width: 70%;
+    }
+    img {
+      @include desktop {
+        width: 70%;
+      }
+    }
+  }
+}
+}
+  .homeSection2 {
+    @include tabletMinMax {
+      padding-top: 23rem;
+
+      .section2ContentContainer {
+        @include tabletMinMax {
+          margin-top: 5rem;
+        }
+      }
+      .content h2 {
+        @include tabletMinMax {
+          font-size: 2.3rem;
+        }
+      }
+      .content p {
+        @include tabletMinMax {
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+.homeSection4 {
+  .homeSection4Grid {
+    @include tabletMinMax {
+      gap: 30px 0;
+    }
+  }
+  .homeSection4Grid li h2 {
+    @include tabletMinMax {
+      font-size: 1.6rem;
+    }
+  }
+
+  .homeSection4Grid li p {
+    @include tabletMinMax {
+      font-size: 1.4em;
+    }
+  }
+}
+
+.homeSection5 {
+  .homeSection5Grid li h2 {
+    @include tabletMinMax {
+      font-size: 1.6rem;
+    }
+  }
+
+  .homeSection5Grid li p {
+    @include tabletMinMax {
+      font-size: 1.4em;
+    }
+  }
+}
+
+.homeSection7 {
+  h2 {
+    @include tabletMinMax {
+      font-size: 1.6rem;
+    }
+  }
+  p {
+    @include tabletMinMax {
+      font-size: 1.5rem;
+    }
+  }
+}
