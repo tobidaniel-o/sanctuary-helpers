@@ -11,9 +11,8 @@ header {
 
 // Header for the Home page
 .homePageHeader {
-  background-image: url(../../assets/header-home.jpg);
+  background-image: url(../assets/header-home.jpg);
   background-position: center;
-
 
   h1 {
     font-size: 2.5rem;
@@ -24,6 +23,29 @@ header {
   }
 }
 
-
-
 // Header for the Blog page
+.blogPageHeader {
+  background-image: url(../assets/blog-image.jpg);
+  background-position: center;
+
+  h1 {
+    font-size: 5rem;
+    width: 50%;
+    font-weight: normal;
+    position: relative;
+    top: 7rem;
+  }
+}
+
+// Header for the Contact page
+.contactPageHeader {
+  background-image: url(../assets/contact-image.jpg);
+  background-position: center;
+
+  h1 {
+    display: block;
+    top: 10rem;
+    font-size: 2.5rem;
+    position: absolute;
+  }
+}

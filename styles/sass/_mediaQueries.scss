@@ -1,3 +1,77 @@
+// Form
+main {
+  div.contactContainer {
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  .section1 {
+    @include desktop {
+      position: relative;
+      top: -11rem;
+      width: 70%;
+      margin-right: 3rem;
+      padding: 5rem;
+      left: -2rem;
+      background: white;
+      box-shadow: 21px 21px #f8fb05;
+    }
+
+    button {
+      @include desktop {
+        width: 100%;
+      }
+    }
+
+    .textEmailContainer input {
+      @include desktop {
+        width: 48%;
+      }
+    }
+  }
+
+  .section2 {
+    @include desktop {
+      text-align: left;
+      margin-top: 7rem;
+    }
+  }
+
+  .textEmailContainer {
+    @include tabletMinMax {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .textEmailContainer input {
+    @include tabletMinMax {
+      width: 49%;
+    }
+
+    @include desktop {
+      width: 49%;
+    }
+  }
+
+  .textEmailContainer input:not(:last-child) {
+    @include tabletMinMax {
+      margin-bottom: 0rem;
+    }
+
+    @include desktop {
+      margin-bottom: 0rem;
+    }
+  }
+}
+
+
 // Home
 .homePageHeader {
   .logoNav {
@@ -25,7 +99,6 @@
       font-size: 4.5rem;
       font-weight: normal;
       top: 1rem;
-      left: 9rem;
     }
   }
 }
@@ -36,92 +109,145 @@
     @include tabletMinMax {
       display: block;
 
-    .section1Img {
-      @include tabletMinMax {
-        position: absolute;
-        top: -13rem;
+      .section1Img {
+        @include tabletMinMax {
+          position: absolute;
+          top: -13rem;
 
-        img {
-          @include tabletMinMax {
-            width: 80%;
+          img {
+            @include tabletMinMax {
+              width: 80%;
+            }
           }
         }
       }
     }
   }
-}
 
-.section1 {
-  @include desktop {
-    display: block;
-  }
-
-  .section1Img {
+  .section1 {
     @include desktop {
-      top: -19rem;
-      left: 0rem;
-      width: 70%;
+      display: block;
     }
-    img {
+
+    .section1Img {
       @include desktop {
+        top: -19rem;
+        left: 0rem;
         width: 70%;
+      }
+      img {
+        @include desktop {
+          width: 70%;
+        }
       }
     }
   }
 }
-}
-  .homeSection2 {
-    @include tabletMinMax {
-      padding-top: 23rem;
+.homeSection2 {
+  @include tabletMinMax {
+    padding-top: 21rem;
 
-      .section2ContentContainer {
-        @include tabletMinMax {
-          margin-top: 5rem;
-        }
+    .section2ContentContainer {
+      @include tabletMinMax {
+        margin-top: 5rem;
       }
       .content h2 {
         @include tabletMinMax {
           font-size: 2.3rem;
+          line-height: 2.5rem;
+        }
+
+        @include desktop {
+          font-size: 3rem;
         }
       }
       .content p {
         @include tabletMinMax {
-          font-size: 1.5rem;
-          line-height: 1.5rem;
+          font-size: 1.8rem;
+          line-height: 2.5rem;
         }
       }
     }
   }
+}
 
 .homeSection4 {
   .homeSection4Grid {
     @include tabletMinMax {
+      display: grid;
+      gap: 30px 0;
+    }
+
+    @include desktop {
+      display: grid;
       gap: 30px 0;
     }
   }
   .homeSection4Grid li h2 {
     @include tabletMinMax {
-      font-size: 1.6rem;
+      font-size: 2rem;
+    }
+
+    @include desktop {
+      font-size: 2rem;
     }
   }
 
   .homeSection4Grid li p {
     @include tabletMinMax {
-      font-size: 1.4em;
+      font-size: 1.6rem;
+      line-height: 2rem;
     }
   }
 }
 
 .homeSection5 {
+  @include desktop {
+    height: 53vh;
+  }
   .homeSection5Grid li h2 {
     @include tabletMinMax {
-      font-size: 1.6rem;
+      font-size: 2rem;
+    }
+
+    @include desktop {
+      font-size: 2rem;
     }
   }
 
   .homeSection5Grid li p {
     @include tabletMinMax {
-      font-size: 1.4em;
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+
+    @include desktop {
+      font-size: 1.7rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  .homeSection5Grid .button {
+    @include desktop {
+      font-size: 1.4rem;
+      margin-top: 0.2rem;
+      padding: 0.5rem 1.4rem;
+    }
+  }
+
+  .homeSection5Grid .homeSection5ImgOne {
+    @include desktop {
+      position: relative;
+      top: -9rem;
+      left: -7rem;
+    }
+  }
+
+  .homeSection5Grid .homeSection5ImgTwo {
+    @include desktop {
+      position: relative;
+      bottom: 3rem;
+      right: -6rem;
     }
   }
 }
@@ -129,12 +255,272 @@
 .homeSection7 {
   h2 {
     @include tabletMinMax {
-      font-size: 1.6rem;
+      font-size: 2rem;
+    }
+
+    @include desktop {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
     }
   }
   p {
     @include tabletMinMax {
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+
+    @include desktop {
+      font-size: 1.7rem;
+      line-height: 2rem;
+    }
+  }
+
+  .button {
+    @include desktop {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      padding: 0.5rem 1.4rem;
+    }
+  }
+}
+
+header {
+  @include largeDesktop {
+    height: 60vh;
+  }
+}
+.homePageHeader {
+  h1 {
+    @include largeDesktop {
+      width: 40%;
+    }
+  }
+}
+
+.homeMainPage {
+  .section1 .section1Img img {
+    @include largeDesktop {
+      position: absolute;
+      top: -13rem;
+      left: -1rem;
+    }
+  }
+}
+
+.homeSection2 {
+  @include largeDesktop {
+    margin-top: 11rem;
+  }
+  .section2ContentContainer .content h2 {
+    @include largeDesktop {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .section2ContentContainer .content p {
+    @include largeDesktop {
+      font-size: 2.3rem;
+      line-height: 2.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .section2ContentContainer .button {
+    @include largeDesktop {
       font-size: 1.5rem;
+      padding: 0.5rem 0.7rem;
+    }
+  }
+
+  .section2ContentContainer .section2Img img {
+    @include largeDesktop {
+      height: 85%;
+    }
+  }
+}
+
+.homeSection4 {
+  @include desktop {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    height: 45vh;
+  }
+}
+
+.homeSection5 {
+  @include largeDesktop {
+    height: 75vh;
+  }
+  .homeSection5Grid {
+    .homeSection5ImgOne {
+      @include largeDesktop {
+        left: -14rem;
+      }
+    }
+  }
+
+  .homeSection5Grid {
+    .homeSection5ImgTwo {
+      @include largeDesktop {
+        right: -12rem;
+        bottom: 12rem;
+      }
+    }
+  }
+}
+
+
+
+// Blog
+body {
+  @include desktop {
+    overflow-x: hidden;
+  }
+}
+
+
+.logoNav {
+  ul {
+    @include tabletMinMax {
+      display: flex;
+    }
+
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  .fa-bars::before {
+    @include tabletMinMax {
+      content: "";
+    }
+
+    @include desktop {
+      content: "";
+    }
+  }
+}
+
+.section1ImgContainer {
+  @include desktop {
+    width: 73%;
+    position: relative;
+    top: -11rem;
+    box-shadow: 10px 10px 0 $borderColor;
+    padding-top: 0;
+    z-index: 1;
+  }
+}
+
+.blogPostSideBarContainer {
+  @include desktop {
+    display: flex;
+    padding-top: 0;
+    position: relative;
+    top: -13rem;
+  }
+  .blog {
+    @include desktop {
+      padding-left: 2rem;
+      background-color: $primaryColor;
+      padding-top: 6rem;
+      width: 77%;
+      border-right: 10px solid $borderColor;
+      border-bottom: 10px solid $borderColor;
+    }
+  }
+
+  .sideBar {
+    @include desktop {
+      padding-left: 0px;
+      width: 26rem;
+      background: $borderColor;
+      position: relative;
+      top: -15rem;
+      right: -3rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      height: 30%;
+
+      .sideBarImg {
+        @include desktop {
+          display: block;
+          width: 100%;
+          height: 40%;
+          object-fit: unset;
+          position: relative;
+          right: -1rem;
+          top: -1rem;
+        }
+      }
+      .sideBarContent {
+        @include desktop {
+          padding: 2rem;
+          .sideBarMission {
+            h3,
+            p {
+              @include desktop {
+                text-align: left;
+              }
+            }
+          }
+          .sideBarPosts {
+            h3 {
+              @include desktop {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section2BlogPostSideBar {
+  @include desktop {
+    height: 50vh;
+  }
+}
+
+.comments {
+  h3 {
+    @include desktop {
+      text-align: left;
+    }
+  }
+  .firstComment,
+  .secondComment {
+    @include desktop {
+      width: 55%;
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+
+
+.postSection {
+  @include desktop {
+    background: $backgroundColor;
+  }
+
+  form {
+    @include desktop {
+      width: 60%;
+    }
+  }
+  input,
+  textarea {
+    @include desktop {
+      background: $backgroundColor;
+    }
+  }
+  button {
+    @include desktop {
+      width: 100%;
     }
   }
 }

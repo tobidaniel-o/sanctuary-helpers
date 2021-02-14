@@ -1,5 +1,4 @@
 .homeMainPage {
-
   .section1 {
     display: none;
     position: relative;
@@ -35,12 +34,13 @@
         text-transform: uppercase;
         font-weight: bold;
         margin-bottom: 0.5rem;
-        font-size: 1.3rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
       }
 
       p {
-        font-size: 1.2rem;
-        line-height: 1.2rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
         margin-bottom: 1rem;
       }
     }
@@ -48,10 +48,13 @@
       font-size: 1rem;
       padding: 0.5rem 0.5rem;
       letter-spacing: 0.1rem;
+      margin-left: 0;
     }
     .section2Img {
       img {
         width: 100%;
+        height: 80%;
+        object-fit: contain;
       }
     }
   }
@@ -75,7 +78,7 @@
   padding-top: 4rem;
   padding-bottom: 5rem;
   .homeSection4Grid {
-    display: grid;
+    display: block;
     grid-template-columns: repeat(2, 1fr);
 
     li {
@@ -84,7 +87,7 @@
 
       .icons {
         margin-right: 1rem;
-        height: 21%;
+        height: 20%;
         padding: 0.5rem 0.5rem;
         background-color: yellow;
         display: flex;
@@ -99,13 +102,16 @@
       h2 {
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        margin-bottom: 0.6rem;
       }
 
       p {
         letter-spacing: 0.1rem;
+        line-height: 2rem;
         text-align: left;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -125,7 +131,7 @@
       text-transform: uppercase;
       font-weight: bold;
       margin-bottom: 0.7rem;
-      font-size: 1.3rem;
+      font-size: 1.7rem;
     }
 
     .button {
@@ -143,13 +149,13 @@
       // position: relative;
       // top: -4rem;
       // left: -4rem;
+
       box-shadow: 9px 9px $borderColor;
     }
 
     .homeSection5ImgTwo {
-      // position: relative;
-      // right: -2rem;
-      // bottom: -3rem;
+      right: 0;
+      bottom: 0;
       box-shadow: -9px 9px $borderColor;
     }
     .newLocations {
@@ -158,8 +164,9 @@
     }
 
     p {
-      line-height: 1.3rem;
+      line-height: 2rem;
       margin-bottom: 1rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -172,24 +179,25 @@
 
 .homeSection7 {
   text-align: center;
-  padding: 4rem 5rem;
+  padding: 4rem 3rem 0; 
 
   h2 {
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   p {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
   }
   .button {
     display: inline;
-    padding: 0.4rem 0.5rem;
+    // padding: 0.4rem 0.5rem;
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 }

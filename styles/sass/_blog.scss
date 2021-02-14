@@ -1,0 +1,190 @@
+main {
+  background-color: #e0fddf;
+  padding: 3rem 0 4rem 0;
+}
+
+.section1ImgContainer {
+  background: white;
+  padding: 1rem 0 0 0;
+
+  .blogPostImg {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+.blogPostSideBarContainer {
+  padding-top: 4rem;
+  .blogPost {
+    h2 {
+      text-transform: uppercase;
+      font-family: $secondBaseFont;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .date {
+      font-size: 1.4rem;
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+    .post {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      line-height: 1.9rem;
+    }
+    .post:last-child {
+      margin-bottom: 5rem;
+    }
+  }
+  .sideBar {
+    background: lemonchiffon;
+    padding: 2.5rem;
+    border-radius: 10px;
+    .sideBarImg {
+      display: none;
+    }
+    .sideBarContent h3 {
+      font-size: 1.4rem;
+      text-align: center;
+      font-family: $secondBaseFont;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+    }
+    .sideBarContent p {
+      font-size: 1.4rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .sideBarPosts {
+      text-align: center;
+      ul {
+        display: inline-block;
+        line-height: 2rem;
+
+        li {
+          list-style-type: disc;
+          text-align: center;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+.comments {
+  padding-top: 5rem;
+  h3 {
+    text-transform: uppercase;
+    font-family: $secondBaseFont;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .firstComment,
+  .secondComment {
+    display: flex;
+    margin-bottom: 5rem;
+  }
+  .commentContainer {
+    p.dateAndAuthor {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      text-align: left;
+    }
+  }
+  .commentImg {
+    margin-right: 2rem;
+    height: 30%;
+  }
+}
+
+.postSection {
+  background: white;
+  padding: 3rem 0 2rem;
+}
+
+// Post form
+main {
+  background-color: $backgroundColor;
+  padding: 3rem 0 4rem 0;
+
+  .textEmailContainer input {
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
+    border: none;
+    border-bottom: 2px solid $btnColor;
+    outline: none;
+    font-size: 1.5rem;
+  }
+
+  .textEmailContainer input:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .textEmailContainer input::placeholder {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-family: $primaryFont;
+  }
+
+  textarea {
+    width: 100%;
+    resize: none;
+    border: 2px solid $btnColor;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    outline: none;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    font-family: $primaryFont;
+  }
+
+  textarea::placeholder {
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: 1.3rem;
+  }
+
+  .button {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    padding: 0.8rem 3rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .section2 {
+    text-align: center;
+  }
+  .socialIcons a i {
+    font-size: 2rem;
+    color: $btnColor;
+    margin-bottom: 3.5rem;
+  }
+
+  .socialIcons a:not(:last-child) {
+    margin-right: 4.5rem;
+  }
+
+  .fullContactDetails {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+
+    p:first-child {
+      margin-bottom: 1.1rem;
+    }
+  }
+}

@@ -1,8 +1,9 @@
 @import "setup";
 @import "variables";
-@import "header";
 @import "navigation";
+@import "header";
 @import "home";
+@import "blog";
 @import "button";
 @import "footer";
 @import "mixins";
@@ -17,7 +18,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1020px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
