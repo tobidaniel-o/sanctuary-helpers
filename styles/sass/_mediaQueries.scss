@@ -71,8 +71,20 @@ main {
   }
 }
 
-
 // Home
+main.homeMainPage {
+  .section1 {
+    @include desktop {
+      background: none;
+      box-shadow: none;
+      width: inherit;
+      padding: 0;
+      top: -14rem;
+      left: -9rem;
+    }
+  }
+}
+
 .homePageHeader {
   .logoNav {
     ul {
@@ -134,10 +146,11 @@ main {
         top: -19rem;
         left: 0rem;
         width: 70%;
-      }
-      img {
-        @include desktop {
-          width: 70%;
+
+        img {
+          @include desktop {
+            width: 100%;
+          }
         }
       }
     }
@@ -369,15 +382,12 @@ header {
   }
 }
 
-
-
 // Blog
 body {
   @include desktop {
     overflow-x: hidden;
   }
 }
-
 
 .logoNav {
   ul {
@@ -497,10 +507,6 @@ body {
     }
   }
 }
-
-
-
-
 
 .postSection {
   @include desktop {

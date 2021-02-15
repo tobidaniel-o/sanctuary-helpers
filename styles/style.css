@@ -998,6 +998,18 @@ footer {
   }
 }
 
+@media only screen and (min-width: 961px) {
+  main.homeMainPage .section1 {
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: inherit;
+    padding: 0;
+    top: -14rem;
+    left: -9rem;
+  }
+}
+
 @media only screen and (min-width: 651px) and (max-width: 960px) {
   .homePageHeader .logoNav ul {
     display: -webkit-box;
@@ -1071,9 +1083,9 @@ footer {
   }
 }
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 961px) and (min-width: 961px) {
   .homeMainPage .section1 .section1Img img {
-    width: 70%;
+    width: 100%;
   }
 }
 
