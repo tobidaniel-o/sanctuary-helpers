@@ -381,7 +381,7 @@ ul li a:hover {
 }
 
 header {
-  height: 55vh;
+  height: 40vh;
   padding-top: 2rem;
   background-size: cover;
 }
@@ -1010,6 +1010,26 @@ footer {
   }
 }
 
+@media only screen and (min-width: 961px) {
+  main.homeMainPage .section1 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  main.homeMainPage .section1 .section1Img {
+    top: -5rem;
+    left: 8rem;
+    width: 43%;
+  }
+}
+
+@media only screen and (min-width: 961px) and (min-width: 961px) {
+  main.homeMainPage .section1 .section1Img img {
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 651px) and (max-width: 960px) {
   .homePageHeader .logoNav ul {
     display: -webkit-box;
@@ -1066,26 +1086,6 @@ footer {
 @media only screen and (min-width: 651px) and (max-width: 960px) and (min-width: 651px) and (max-width: 960px) and (min-width: 651px) and (max-width: 960px) {
   .homeMainPage .section1 .section1Img img {
     width: 80%;
-  }
-}
-
-@media only screen and (min-width: 961px) {
-  .homeMainPage .section1 {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 961px) {
-  .homeMainPage .section1 .section1Img {
-    top: -19rem;
-    left: 0rem;
-    width: 70%;
-  }
-}
-
-@media only screen and (min-width: 961px) and (min-width: 961px) {
-  .homeMainPage .section1 .section1Img img {
-    width: 100%;
   }
 }
 

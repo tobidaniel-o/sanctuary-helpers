@@ -83,6 +83,26 @@ main.homeMainPage {
       left: -9rem;
     }
   }
+
+  .section1 {
+    @include desktop {
+      display: block;
+    }
+
+    .section1Img {
+      @include desktop {
+        top: -5rem;
+        left: 8rem;
+        width: 43%;
+
+        img {
+          @include desktop {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 .homePageHeader {
@@ -136,25 +156,25 @@ main.homeMainPage {
     }
   }
 
-  .section1 {
-    @include desktop {
-      display: block;
-    }
+  // .section1 {
+  //   @include desktop {
+  //     display: block;
+  //   }
 
-    .section1Img {
-      @include desktop {
-        top: -19rem;
-        left: 0rem;
-        width: 70%;
+  //   .section1Img {
+  //     @include desktop {
+  //       top: -19rem;
+  //       left: 0rem;
+  //       width: 60%;
 
-        img {
-          @include desktop {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
+  //       img {
+  //         @include desktop {
+  //           width: 100%;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 .homeSection2 {
   @include tabletMinMax {
